@@ -1,0 +1,43 @@
+<form>
+    <label for="RMFtooltip_tip">Enter the tip text (the popup text)</label>
+    <input type="text" name="RMFtooltip_tip" id="RMFtooltip_tip" placeholder="Tips" class="text ui-widget-content ui-corner-all" />
+</form>
+<style>
+.ui-dialog {
+	border-radius: 2px;
+	border: 1px solid #ddd;
+	box-shadow: 2px 2px 5px #ddd;
+}
+.ui-dialog>* {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ui-dialog-title {
+  color: #464646;
+  font-size: 1.5em;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  display: block;
+}
+.ui-dialog-titlebar-close{
+    display: none;
+}
+.ui-dialog-content {
+  line-height: 2em !important;
+}
+.ui-dialog-content form {
+  margin-bottom: 10px;
+}
+.ui-button-text-only {
+  width: calc(49% - 5px);
+  margin: 0px 1% 5px 1% !important;
+}
+
+#RMFtooltip_tip {
+	width: 100%;
+}
+</style>
+
+<script>
+jQuery('#RMFtooltip_tip').focus();
+</script>
